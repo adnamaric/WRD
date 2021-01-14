@@ -4,7 +4,17 @@
 .lijevi label{
     display: block;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
+/*invisble scroller*/
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
 *{
     margin:0;
     padding:0;
@@ -93,7 +103,8 @@
 
 }
 .srednji{
-    overflow-y: scroll;
+   overflow-y: scroll;
+    
 }
 .IzbornikStavka:hover{
     background-color:rgb(75,107,154);

@@ -23,15 +23,15 @@ $(".zaFormu").validate({
     },
     messages:{
         ime:{
-            required:"true",
+            required:"Obavezno polje",
             regex:"Molimo unesite ime i prezime sa velikim početnim slovima!"
         },
         grad:{
-            required:"true",
+            required:"Obavezno polje",
             regex:"Molimo unesite samo tesktualne podatke!"
         },
         licnibrojk:{
-            required:"true",
+            required:"Obavezno polje",
             regex:"Molimo unesite traženi format ID/111-222 "
         }
     }

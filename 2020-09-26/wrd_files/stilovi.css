@@ -1,0 +1,159 @@
+.error{
+    color:darkred;
+}
+.lijevi label{
+    display: block;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sve{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(169,169,169);
+}
+.lijevi,.desni{
+ width: 20%;
+}
+.srednji{
+    width: 60%;
+}
+.lijevi,.srednji,.desni{
+    position:relative;
+    top:+10%;
+    bottom:+10%;
+    height: 80%;
+}
+.gornji,.donji{
+    height: 10%;
+}
+.lijevi,.srednji{
+    color:white;
+    background-color:rgb(128,128,128) ;
+}
+.lijevi input,.lijevi textarea{
+    background-color: transparent;
+    border:none;
+    border-bottom: 3px solid rgb(25,26,142);
+}
+.lijevi input{
+    border-bottom-right-radius: 20%;
+    width:70%;
+    color:white;
+}
+.lijevi textarea{
+    border-bottom-right-radius: 15%;
+    resize: none;
+    width:70%;
+}
+.lijevi{
+    padding:30px;
+}
+#posalji{
+    margin-top:2px;
+    font-size: 15;
+}
+.srednji th,.srednji td, #tabelaProizvodi{
+    border:none;
+}
+#tabelaProizvodi{
+    color:white;
+    padding:30px;
+}
+.srednji th{
+    border-bottom: 4px solid rgb(25,26,142);
+    text-align: left;
+}
+.srednji{
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+}
+.desni{
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    background-color: rgb(92,92,92);
+    color:white;
+    padding:20px;
+}
+
+.IzbornikStavka{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(108,108,108);
+    color:rgb(146,146,146);
+    border:none;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10px;
+    border-bottom: 3px solid rgb(25,26,142);
+
+}
+.srednji{
+    overflow-y: scroll;
+}
+.IzbornikStavka:hover{
+    background-color:rgb(75,107,154);
+    color:white;
+}
+
+@media only screen and (max-width:600px){
+    html,body,.sve{
+        height: 100%;
+        width: 100%;
+    }
+    .sve{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .gornji,.donji{
+        height: 0%;
+    }
+    .desni,.srednji,.lijevi{
+        position: static;
+        
+        
+    }
+    .desni{
+        width: 100%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        height: 100%;
+    }
+    .IzbornikStavka{
+        height: 25%;
+
+    }
+    .srednji{
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    overflow-y: scroll;
+    }
+    .srednji th,.srednji p{
+        font-size: small;
+    }
+    .lijevi{
+        width: 100%;
+        height: 100%;
+        padding:20px;
+    }
+    .lijevi label,.lijevi input{
+        font-size: small;
+        align-items: center;
+    }
+    .lijevi{
+        align-items: center;
+    }
+   #tabelaProizvodi, td{
+       font-size: 15;;
+   }
+   img{
+       width: 50;
+       height: 50;
+   }
+}

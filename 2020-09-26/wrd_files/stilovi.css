@@ -7,7 +7,7 @@
 ::-webkit-scrollbar {
     width: 12px;
 }
-/*invisble scroller*/
+/*invisble scroll*/
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
